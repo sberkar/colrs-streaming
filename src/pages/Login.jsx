@@ -16,7 +16,7 @@ function Login(){
 
     return <>
         <Nav />
-        <div className="flex flex-col justify-center items-center h-[90vh]">
+        <div className="flex flex-col justify-center items-center h-[70vh]">
             <button disabled={loginLoading} onClick={() => handleLogin()} className="flex drop-shadow-2xl bg-white items-center h-[56px] p-4 rounded-md">
                 <img className="h-[40px] mr-1" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt="" />
                 <p>Sign In with Google</p>
