@@ -9,6 +9,7 @@ function Home() {
         <Nav />
         {(currentUser===null)?<>
             <Hero />
+            {process.env.REACT_APP_APIKEY}
         </>:<><div>Home</div></>}
     </>
         
