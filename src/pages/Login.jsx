@@ -4,6 +4,7 @@ import Nav from "../components/Nav"
 import { useState } from "react";
 
 function Login(){
+    document.title = "Login - Colrs"
     const [loginLoading, setLoginLoading] = useState(false)
     const { login } = useAuth()
     function handleLogin(){

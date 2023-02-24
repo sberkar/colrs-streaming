@@ -31,7 +31,7 @@ function Nav() {
     return <header>
         <nav className="navbar">
             <div className="logo">
-                <Link className="logo-text" href="/"><img src={Logo} alt="colrs url logo"/></Link>
+                <Link className="logo-text" to="/"><img src={Logo} alt="colrs url logo"/></Link>
                 <span className="menu-outline"><IonIcon onClick={() => menuTogglerFn()} name={menuIcon} /></span>
             </div>
             <div className="menu" id="menu" style={menuState}>
