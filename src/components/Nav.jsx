@@ -42,10 +42,10 @@ function Nav() {
                 <div className="menu-item"><Link to="/app/profile"><img src={currentUser?.photoURL} alt="profile photo" /></Link></div>
                 </>:<>
                     <div className="menu-item-non-login">
-                        <Link to="/login">Login</Link>
+                        <Link to="/app/login">Login</Link>
                     </div>
                     <div className="menu-item-non-login">
-                        <Link to="/login">Get Started</Link>
+                        <Link to="/app/login">Get Started</Link>
                     </div>
                 </>}
             </div> 
