@@ -49,13 +49,15 @@ function CreateUrl() {
             setSuccessMsg("short url created successfully")
             setUrl("")
             setTitle("")
+            setTitleError("");
+            setUrlError("")
         }).catch(err => console.log(err))
     }
     return <>
         <Nav />
         <div className="w-full flex items-center justify-center mt-8 ">
             <div className="w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%] p-4 border border-slate-200">
-                <h1 className="text-2xl md:text-3xl my-4 text-center">Create Short Url</h1>
+                <h1 className="text-2xl font-semibold md:text-3xl my-4 text-center">Create Short Url</h1>
                 <div className="w-full my-4">
                     <input type="text" className={`block w-full border ${urlError.length > 0?"border-[red]":"border-black"} placeholder:text-slate-700 px-2 py-1 rounded placeholder-black`} placeholder="Enter URL" onChange={e => setUrl(e.target.value)} value={url}/>
                     <p className="text-[red] text-md">{urlError.length > 0 && urlError}</p>

@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useAuth } from "./contexts/Auth";
-import Pages from "./pages"
+
+import Pages from "./pages";
 
 
 function App() {
