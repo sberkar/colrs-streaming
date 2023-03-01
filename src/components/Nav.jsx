@@ -28,7 +28,7 @@ function Nav() {
     }
 
     return <header>
-        <nav className="flex items-center px-4 py-3 md:px-8 md:py-2">
+        <nav className="flex items-center px-4 py-3 md:p-5">
             <div className="w-full flex items-center justify-between md:w-1/4">
                 <Link className="" to="/"><img src={Logo} className="h-[50px] md:h-[80px]" alt="colrs url logo"/></Link>
                 <span className="md:hidden relative z-10 text-3xl" onClick={() => menuTogglerFn()}><IonIcon name={menuIcon} /></span>

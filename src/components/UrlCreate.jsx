@@ -49,20 +49,20 @@ function UrlCreate(){
         }).catch(err => console.log(err))
     }
 
-    return <div className="w-full flex items-center justify-center mt-4 md:mt-8 ">
-            <div className="p-4 border border-slate-200">
-                <h1 className="text-2xl font-semibold md:text-3xl my-4 text-center">Create Short Url</h1>
-                <div className="w-full my-4">
-                    <input type="text" className={`block w-full border ${urlError.length > 0?"border-[red]":"border-black"} placeholder:text-slate-700 px-2 py-1 rounded placeholder-black`} placeholder="Enter URL" onChange={e => setUrl(e.target.value)} value={url}/>
+    return <div className="w-full flex items-center justify-center">
+            <div className="p-2 md:p-4 border w-full border-slate-200">
+                <h1 className="text-2xl font-semibold md:font-medium lg:text-3xl my-3 md:my-4 text-center">Create Short Url</h1>
+                <div className="w-full my-3">
+                    <input type="text" className={`block w-full border ${urlError.length > 0?"border-[red]":"border-black"} text-sm rounded-sm md:text-xl placeholder:text-slate-700 px-2 py-1 md:rounded placeholder-black`} placeholder="Enter URL" onChange={e => setUrl(e.target.value)} value={url}/>
                     <p className="text-[red] text-md">{urlError.length > 0 && urlError}</p>
                 </div>
-                <div className="w-full my-4">
-                    <input type="text" className={`block w-full border ${urlError.length > 0?"border-[red]":"border-black"} px-2 py-1 placeholder:text-slate-700`} placeholder="Enter Title" onChange={e => setTitle(e.target.value)} value={title}/>
+                <div className="w-full my-3">
+                    <input type="text" className={`block w-full border ${urlError.length > 0?"border-[red]":"border-black"} text-sm md:text-xl rounded-sm md:rounded  px-2 py-1 placeholder:text-slate-700`} placeholder="Enter Title" onChange={e => setTitle(e.target.value)} value={title}/>
                     <p className="text-[red] text-md">{titleError.length > 0 && titleError}</p>
                 </div>
                 
                 <div className="w-full my-4">
-                    <button onClick={() => handleSubmit()} className="w-full border border-black bg-primary font-semibold px-4 py-2 rounded">Create It!</button>
+                    <button onClick={() => handleSubmit()} className="w-full border border-black bg-primary font-semibold px-4 py-1 md:py-2 rounded">Create It!</button>
                 </div>
                 {successMsg && <p className="text-[green]">{successMsg}</p>}
             </div>
