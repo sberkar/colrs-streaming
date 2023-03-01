@@ -1,9 +1,7 @@
-import { collection, getDocs, query, where } from "firebase/firestore";
-import { useEffect } from "react";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
+import UrlCreate from "../components/UrlCreate"
 import { useAuth } from "../contexts/Auth";
-import { db } from "../firebase_config";
 
 function Home() {
     const { currentUser } = useAuth()
@@ -12,7 +10,10 @@ function Home() {
         <Nav />
         {(currentUser===null)?<>
             <Hero />
-        </>:<><div>Home</div></>}
+        </>:<div className="px-6 md:px-8 flex flex-col md:flex-row">
+            <div className="md:w-3/4">ksdjfls</div>
+            <div className="w-1/4"><UrlCreate /></div>
+        </div>}
     </>
         
 }
